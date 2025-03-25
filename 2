@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-2.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function findMinValue(array) {
+            if (array.length === 0) {
+                return "Array is empty";
+            }
+            let minValue = array[0];
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] < minValue) {
+                    minValue = array[i];
+                }
+            }
+            return minValue;
+        }
+
+        const sampleArray1 = [3, 5, 1, 8, -3, 7, 8];
+        const sampleArray2 = [7, 12, 6, 9, 20, 56, 89];
+        const sampleArray3 = [];
+        const sampleArray4 = [0, 0, 0, 0, 0, 0];
+
+        console.log("Minimum value in sampleArray1:", findMinValue(sampleArray1));
+        console.log("Minimum value in sampleArray2:", findMinValue(sampleArray2));
+        console.log("Minimum value in sampleArray3:", findMinValue(sampleArray3));
+        console.log("Minimum value in sampleArray4:", findMinValue(sampleArray4));
+    </script>
+</body>
+</html>
