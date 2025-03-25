@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function isEven() {
+            const input = prompt("Nhập một số nguyên:");
+            const number = parseInt(input, 10);
+            if (!isNaN(number)) {
+                if (number % 2 === 0) {
+                    alert("Số bạn vừa nhập là số chẵn!");
+                } else {
+                    alert("Số bạn vừa nhập là số lẻ!");
+                }
+            } else {
+                alert("Vui lòng nhập một số nguyên hợp lệ.");
+            }
+        }
+        isEven();
+    </script>
+</body>
+</html>
