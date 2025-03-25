@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-1.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function processConfirm(question) {
+            let answer = confirm(question);
+            let result = '';
+            if (answer) {
+                result += "Excellent. We'll play a nice game of chess.";
+            } else {
+                result += 'Maybe later then.';
+            }
+            return result;
+        }
+        let message = processConfirm('Bạn có chắc chắn với quyết định của mình không');
+        console.log(message); 
+    </script>
+</body>
+</html>
